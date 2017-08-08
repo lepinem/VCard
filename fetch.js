@@ -1,4 +1,3 @@
-
 let VCard = document.querySelector(".wrapper");
 
 let req = new XMLHttpRequest();
@@ -10,18 +9,18 @@ function display() {
   let data = JSON.parse(this.responseText);
   function profilePage(data){
     const myProfile = `
-      <header class="header">
-        <h1>${data.name}</h1>
+      <header>
+        <span>${data.name}</span>
       </header>
       <div class="container">
         <div class="basics">
           <h2>The Basics</h2>
           <ul>
-            <li><span>Name: </span>${data.name}</li>
-            <li><span>GitHub URL: </span>${data.html_url}</li>
-            <li><span>Email: </span>${data.email}</li>
-            <li><span>Company: </span>${data.company}</li>
-            <li><span>Website: </span>${data.blog}</li>
+            <li><span>Name:</span>${data.name}</li>
+            <li><span>GitHub URL:</span>${data.html_url}</li>
+            <li><span>Email:</span>${data.email}</li>
+            <li><span>Company:</span>${data.company}</li>
+            <li><span>Website:</span>${data.blog}</li>
           </ul>
         </div>
         <div class="story">
