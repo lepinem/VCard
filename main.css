@@ -1,1 +1,55 @@
 
+
+body{
+  background-color: black;
+}
+
+div{
+  background: #f3f3f3;
+  display: block;
+
+}
+
+header{
+  background: #1c1c1c;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+  font-size: 60px;
+  color: #f3f3f3;
+  text-align: center;
+}
+
+div{
+
+}
+
+div .container{
+  width: 100%;
+}
+
+ul{
+  flex-direction: column;
+}
+
+li{
+  color: #CCCCCC;
+}
+
+span{
+  color: #a0bdbe;
+}
+
+.basics{
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.story{
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.image{
+  width: 32.5%;
+  flex-direction: column;
+}

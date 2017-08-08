@@ -13,26 +13,26 @@ function display() {
   function profilePage(data){
     const myProfile = `
       <header>
-        <h1><center>${data.name}<center></h1>
+        <span>${data.name}</span>
       </header>
       <div class="container"
-      <div class="basics">
+        <div class="basics">
           <h2>The Basics</h2>
           <ul>
-            <li><p>Name:</p>${data.name}</li>
-            <li><p>GitHub URL:</p>${data.html_url}</li>
-            <li><p>Email:</p>${data.email}</li>
-            <li><p>Company:</p>${data.company}</li>
-            <li><p>Website:</p>${data.blog}</li>
+            <li><span>Name:</span>${data.name}</li>
+            <li><span>GitHub URL:</span>${data.html_url}</li>
+            <li><span>Email:</span>${data.email}</li>
+            <li><span>Company:</span>${data.company}</li>
+            <li><span>Website:</span>${data.blog}</li>
           </ul>
-      </div>
-      <div class="story">
-        <h2>The Story</h2>
-        <p>${data.bio}</p>
-      </div>
-      <div class="image">
-      <img src=${data.avatar_url}></img>
-      </div>
+        </div>
+        <div class="story">
+          <h2>The Story</h2>
+          <p>${data.bio}</p>
+        </div>
+        <div class="image">
+          <img src=${data.avatar_url}></img>
+        </div>
       </div>
     `
     return myProfile;
